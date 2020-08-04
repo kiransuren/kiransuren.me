@@ -43493,9 +43493,15 @@ module.exports = [{
 }, {
   "name": "Islander",
   "description": "Proof of concept Unity game using infinite terrain generation. Find the pieces of your fallen rocket and escape the planet before its too late!",
-  "imgsource": "../../public/demos/gatoraccessFulldemo.gif",
+  "imgsource": "../../public/demos/islanderdemo.gif",
   "link": "https://github.com/kiransuren/GatorAccess",
   "firebaselink": "https://firebasestorage.googleapis.com/v0/b/knowhow-69b71.appspot.com/o/islanderdemo.gif?alt=media&token=93137578-c5ee-473e-8da6-e41766124e62"
+}, {
+  "name": "Swifty",
+  "description": "Swifty is a simple, lightweight note taking iOS app. Perfect for remembering any small pieces of information.",
+  "imgsource": "../../public/demos/swiftydemo.gif",
+  "link": "https://github.com/kiransuren/Swifty",
+  "firebaselink": "https://firebasestorage.googleapis.com/v0/b/knowhow-69b71.appspot.com/o/swiftydemo.gif?alt=media&token=705b7360-3c5a-45d0-b1cd-6e81d48f8933"
 }, {
   "name": "Deadwatch",
   "description": "A top-down shooter game created using python and pygame.",
