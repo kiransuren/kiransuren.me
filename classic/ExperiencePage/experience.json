@@ -1,0 +1,31 @@
+[
+    {
+        "position":"Software Team Member",
+        "employer":"UW Robotics Team",
+        "description":"Created RQT plugins for GPS conversion using C++"
+    },
+
+    {
+        "position":"Director of Fundraising",
+        "employer":"Wilson Tech Club",
+        "description":"Led and managed fundraising projects for the Wilson tech club, including running a video game tournament. Led a team developing a game using Unity and C#."
+    },
+
+    {
+        "position":"Executive Director of Web Development",
+        "employer":"Wilson STEM Club",
+        "description":"Designed, built and maintained the Wilson STEM club website. Collaborated with other executives to run competitions and other facets of the club."
+    },
+
+    {
+        "position":"Camp Volunteer",
+        "employer":"Royal City Soccer Club",
+        "description":"Helped organize kids, set up and run drills, games, tournaments and warm ups."
+    },
+
+    {
+        "position":"Reading Buddy Volunteers",
+        "employer":"Whitby Public Library",
+        "description":"Assisted children aged 5 to 12 in literacy skills including reading and speaking."
+    }
+]

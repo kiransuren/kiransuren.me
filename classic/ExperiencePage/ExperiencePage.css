@@ -1,0 +1,97 @@
+#experience-card{
+    position: relative;
+    height: 100% auto;
+    padding-top: 6rem;
+    background-color: #EDF2F8; /*efe6ea, F9F7F3*/
+    z-index: 10;
+}
+
+#experienceTitle{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 5vw;
+    color: #201f1f;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+#experience-container{
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.experienceCardWrapper{
+    background-color: #2b303a;
+    width: 80%;
+    margin-bottom: 3rem;
+    color: white;
+    border-radius: 10px;
+    font-family: 'Merriweather', serif;
+    font-family: 'Montserrat', sans-serif;
+    -webkit-box-shadow: 49px 29px 66px -24px rgba(0,0,0,0.71);
+    -moz-box-shadow: 49px 29px 66px -24px rgba(0,0,0,0.71);
+    box-shadow: 49px 29px 66px -24px rgba(0,0,0,0.71);
+    
+}
+
+.experienceCardWrapper:hover{
+    transform:translate(0px,10px);
+}
+
+.experienceTitle{
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    margin: 2rem;
+    text-align: center;
+    align-items: center;
+    
+}
+
+.experiencePosition{
+    font-size: 3vw;
+    text-align: center;
+    margin-right: 1rem;
+}
+
+.experienceEmployer{
+    text-align: center;
+    margin-left: 1rem;
+}
+
+.experienceDescription{
+    border-radius: 10px;
+    margin: 2rem;
+}
+
+
+/*DARK MODE*/
+#experience-card{
+    background-color: #202020; /*efe6ea, F9F7F3*/
+}
+
+#experienceTitle{
+    color: #09b4ed;
+}
+
+#experienceTitleUnderline{
+    height: 0.2rem;
+    background-color:#09b4ed;
+    margin: 1vw 35vw;
+}
+
+.experienceCardWrapper{
+    -webkit-box-shadow: 49px 29px 66px -2px rgba(0,0,0,0.62);
+    -moz-box-shadow: 49px 29px 66px -2px rgba(0,0,0,0.62);
+    box-shadow: 49px 29px 66px -2px rgba(0,0,0,0.62);
+    background-color: #fafafa;
+    color: #2B303A;
+-webkit-box-shadow: 24px 32px 39px 0px rgba(0,0,0,1);
+-moz-box-shadow: 24px 32px 39px 0px rgba(0,0,0,1);
+box-shadow: 24px 32px 39px 0px rgba(0,0,0,1);
+    
+
+}

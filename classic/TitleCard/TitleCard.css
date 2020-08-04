@@ -1,0 +1,106 @@
+#title-card{
+    padding-top:30vh;
+    position: block;
+    margin-left: 5vw;
+    height: 71vh;
+}
+
+.title{
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    font-size: 8vw;
+    color: #90C2E7;
+    padding: 0;
+    margin: 0;
+}
+
+#divider{
+    width: 30vw;
+    height: 1px;
+    background-color: #FFFFFF;
+}
+
+#taglineClassic{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 2vw;
+    color: #FFFFFF;
+    padding-left: 0.4vw;
+    margin: 0;
+    width: 100% auto;
+}
+
+#taglineClassic:hover{
+    animation: 3s pulse;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes pulse {
+    0% {
+      color:#00fc0d;
+    }
+    50%{
+        color:#09b4ed;
+    }
+    100% {
+      color:#00fc0d;
+    }
+}
+
+
+
+.blinking{
+    font-size: 3vw;
+    animation:blinkingText 1.2s infinite;
+  }
+  @keyframes blinkingText{
+    0%{     color: #00fc0d;    }
+    49%{    color: #00fc0d; }
+    60%{    color: rgba(255, 255, 255, 0); }
+    99%{    color:rgba(255, 255, 255, 0);  }
+    100%{   color: #00fc0d;    }
+  }
+  
+  @media only screen and (max-width: 640px) {
+    #title-card{
+        padding-top:10vh;
+        display: flex;
+        margin-left: 0;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .title{
+      font-family: 'Merriweather', serif;
+      font-weight: 700;
+      font-size: 14vw;
+      color: #90C2E7;
+      padding: 0;
+      margin: 0;
+  }
+  
+  #divider{
+      width: 30vw;
+      height: 1px;
+      background-color: #FFFFFF;
+  }
+  
+  #taglineClassic{
+      font-family: 'Raleway', sans-serif;
+      font-weight: 700;
+      font-size: 4vw;
+      color: #FFFFFF;
+      padding-left: 0.4vw;
+      margin: 0;
+      width: 100% auto;
+  }
+  
+  #taglineClassic:hover{
+      animation: 3s pulse;
+      animation-iteration-count: infinite;
+  }
+  }

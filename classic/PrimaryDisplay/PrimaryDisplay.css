@@ -1,0 +1,49 @@
+#primary-div{
+    background-color: #080808; /*#2197ff*/
+    display: block;
+}
+
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+.division{
+    background-color: #ffffff00;
+    height: 0vh;
+}
+
+#modeToggle{
+    background-color: #ffffff00;
+    outline: none;
+    border: none;
+    color: #fb0000;
+    z-index: 100;
+    position: fixed;
+    font-size: 1rem;
+    bottom: 10px;
+    right: 10px;
+}
+
+#modeToggle:hover{
+    animation: 3s pulse;
+    animation-iteration-count: infinite;
+}
+
+
+
+@keyframes pulse {
+    0% {
+      color:#00fc0d;
+      transform: scale(1);
+    }
+    50%{
+        color:#09b4ed;
+        transform: scale(2);
+    }
+    100% {
+      color:#00fc0d;
+      transform: scale(1);
+    }
+}
+
