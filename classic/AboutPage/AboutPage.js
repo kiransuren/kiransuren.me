@@ -50,7 +50,7 @@ const AboutPage = () => {
                 </div>
 
                 <animated.div id="aboutContentProfileWrapper" style={props}>
-                    <img id="aboutContentProfile" src={require("../../public/profilepicsqr.png")}/>
+                    <img id="aboutContentProfile" src={require("/public/profilepicsqr.png")}/>
                 </animated.div> 
 
             </div>
@@ -65,6 +65,8 @@ const AboutPage = () => {
 
 export default AboutPage;
 
+
+require("/public/profilepicsqr.png")
 require("/public/downarrow.svg")
 require("/public/codeabout.svg")
 require("/public/electronicabout.svg")

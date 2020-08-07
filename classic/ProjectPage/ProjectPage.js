@@ -60,7 +60,6 @@ const ProjectPage = () => {
                     } */}
                
             </div>
-            <img className="project-image" src={require("../../public/videodemo/foodsterdemo.mp4")}/>
         </animated.div>
     )
 }

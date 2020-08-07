@@ -42931,7 +42931,7 @@ var AboutPage = function AboutPage() {
     style: props
   }, /*#__PURE__*/_react.default.createElement("img", {
     id: "aboutContentProfile",
-    src: require("../../public/profilepicsqr.png")
+    src: require("/public/profilepicsqr.png")
   }))), /*#__PURE__*/_react.default.createElement("div", {
     id: "skillDirectionDiv"
   }, /*#__PURE__*/_react.default.createElement("p", {
@@ -42944,6 +42944,8 @@ var AboutPage = function AboutPage() {
 
 var _default = AboutPage;
 exports.default = _default;
+
+require("/public/profilepicsqr.png");
 
 require("/public/downarrow.svg");
 
@@ -42967,7 +42969,7 @@ require("/public/mechanicalabout.svg");
   <p>3D Design/Mechanical Tinkerer</p>
   </div> */
 }
-},{"react":"node_modules/react/index.js","react-spring":"node_modules/react-spring/web.js","./AboutPage.css":"classic/AboutPage/AboutPage.css","../../MainContext":"MainContext.js","../SkillsView/SkillsView":"classic/SkillsView/SkillsView.js","../../public/profilepicsqr.png":"public/profilepicsqr.png","/public/downarrow.svg":"public/downarrow.svg","/public/codeabout.svg":"public/codeabout.svg","/public/electronicabout.svg":"public/electronicabout.svg","/public/mechanicalabout.svg":"public/mechanicalabout.svg"}],"classic/ProjectPage/ProjectPage.css":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","react-spring":"node_modules/react-spring/web.js","./AboutPage.css":"classic/AboutPage/AboutPage.css","../../MainContext":"MainContext.js","../SkillsView/SkillsView":"classic/SkillsView/SkillsView.js","/public/profilepicsqr.png":"public/profilepicsqr.png","/public/downarrow.svg":"public/downarrow.svg","/public/codeabout.svg":"public/codeabout.svg","/public/electronicabout.svg":"public/electronicabout.svg","/public/mechanicalabout.svg":"public/mechanicalabout.svg"}],"classic/ProjectPage/ProjectPage.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -43661,10 +43663,7 @@ var ProjectPage = function ProjectPage() {
     }, _project.default[index].name), /*#__PURE__*/_react.default.createElement("p", {
       className: "projectDescription"
     }, _project.default[index].description))));
-  })), /*#__PURE__*/_react.default.createElement("img", {
-    className: "project-image",
-    src: require("../../public/videodemo/foodsterdemo.mp4")
-  }));
+  })));
 };
 
 var _default = ProjectPage;
@@ -44048,7 +44047,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53736" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50171" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
