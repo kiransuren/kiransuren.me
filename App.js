@@ -2,16 +2,10 @@
 import React, { useState, useEffect} from 'react'
 import MainContext from './MainContext'
 import PrimaryDisplay from './classic/PrimaryDisplay/PrimaryDisplay'
-//React Routes
 
 
 //Misc
 import "./styles.css";
-
-//REDUX:
-//Reducer
-//Store
-//const MainContext = createContext(null);
 
 export default function App(props) {
 

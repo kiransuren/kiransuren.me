@@ -1,5 +1,5 @@
-import React, {useContext, useEffect, useState} from "react";
-import {useSpring, animated, useTrail, useTransition} from 'react-spring';
+import React, {useContext, useEffect} from "react";
+import {useSpring, animated, useTrail} from 'react-spring';
 import './ExperiencePage.css'
 import MainContext from '../../MainContext';
 import data from './experience.json';
@@ -26,8 +26,6 @@ const ExperiencePage = () => {
     
     useEffect(() =>{
         if(api.classicPage() === "EXPERIENCE"){
-            console.log("EXPERIENCE PAGE REACHERD")
-            console.log(data.length)
             setScaleUnderline({transform: "scale(1)", delay:300})
             setTrail({transform: "translate(0vw,0vw)", delay:100})
         }

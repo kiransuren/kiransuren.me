@@ -14,7 +14,6 @@ const TitleCard = () => {
             }else{
                 document.getElementById(elementID).innerHTML += text.charAt(i);
             }
-          //console.log(txt.charAt(i));
           i++;
           setTimeout(function(){typeWriter(text, speed, i, elementID)}, speed);
         }

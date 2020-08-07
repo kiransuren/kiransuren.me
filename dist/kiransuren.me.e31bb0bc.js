@@ -42103,20 +42103,14 @@ var Navbar = function Navbar() {
     primaryref = document.getElementById("title-card");
     projectref = document.getElementById("project-card");
     experienceref = document.getElementById("experience-card");
-    console.log("HOME IS TRUE");
 
     if (betweenBottomDiv(experienceref)) {
-      console.log("AT EXPERIENCE");
       api.setClassicPage("EXPERIENCE");
     } else if (betweenBottomDiv(projectref)) {
-      console.log("AT PROJECT");
       api.setClassicPage("PROJECT");
     } else if (betweenBottomDiv(aboutref)) {
-      console.log(window.scrollY + window.innerHeight >= aboutref.offsetTop);
-      console.log("AT ABOUT");
       api.setClassicPage("ABOUT");
     } else if (betweenBottomDiv(primaryref)) {
-      console.log("AT HOME");
       api.setClassicPage("HOME");
     }
   }, []);
@@ -42127,7 +42121,6 @@ var Navbar = function Navbar() {
     projectref = document.getElementById("project-card");
     experienceref = document.getElementById("experience-card");
     var marg = 0;
-    console.log("HOME IS TRUE");
   }, [api.classicPage()]);
 
   var betweenDiv = function betweenDiv(divRef) {
@@ -42136,7 +42129,6 @@ var Navbar = function Navbar() {
   };
 
   var betweenBottomDiv = function betweenBottomDiv(divRef) {
-    console.log(divRef.offsetTop);
     var margin = 0;
     return window.scrollY + window.innerHeight >= divRef.offsetTop + margin;
   };
@@ -42144,97 +42136,46 @@ var Navbar = function Navbar() {
   var trackScrolling = function trackScrolling() {
     var off = 600;
     var marg = 300;
-    /*  if(betweenDiv(window, primaryref, marg)){
-         console.log("AT HOME");
-         api.setClassicPage("HOME");
-     }
-     else if(betweenDiv(window, aboutref,marg)){
-         console.log("AT ABOUT");
-         api.setClassicPage("ABOUT");
-     }
-     else if(betweenDiv(window, projectref,marg)){
-         console.log("AT PROJECT");
-         api.setClassicPage("PROJECT");
-     }
-     else if(betweenDiv(window, experienceref,marg)){
-         console.log("AT EXPERIENCE");
-         api.setClassicPage("EXPERIENCE");
-     } */
 
     if (betweenBottomDiv(experienceref)) {
-      console.log("AT EXPERIENCE");
       api.setClassicPage("EXPERIENCE");
     } else if (betweenBottomDiv(projectref)) {
-      console.log("AT PROJECT");
       api.setClassicPage("PROJECT");
     } else if (betweenBottomDiv(aboutref)) {
-      console.log(window.scrollY + window.innerHeight >= aboutref.offsetTop);
-      console.log("AT ABOUT");
       api.setClassicPage("ABOUT");
     } else if (betweenBottomDiv(primaryref)) {
-      console.log("AT HOME");
       api.setClassicPage("HOME");
     }
-    /*  if(betweenBottomDiv(primaryref)){
-         console.log("AT HOME");
-         api.setClassicPage("HOME");
-     }
-     else if(betweenBottomDiv(aboutref)){
-         console.log((window.scrollY + window.innerHeight) >= (aboutref.offsetTop))
-         console.log("AT ABOUT");
-         api.setClassicPage("ABOUT");
-     }
-     else if(betweenBottomDiv(projectref)){
-         console.log("AT PROJECT");
-         api.setClassicPage("PROJECT");
-     }
-     else if(betweenBottomDiv(experienceref)){
-         console.log("AT EXPERIENCE");
-         api.setClassicPage("EXPERIENCE");
-     } */
-
 
     if (window.scrollY > primaryref.offsetTop + primaryref.offsetHeight - off) {
-      navref.current.id = "aboutNavbar"; //navref.current.style.backgroundColor = "#080808";
+      navref.current.id = "aboutNavbar";
     } else if (window.scrollY < primaryref.offsetTop + primaryref.offsetHeight + off) {
-      navref.current.id = "splashNavbar"; //navref.current.style.backgroundColor = "#08080800";
+      navref.current.id = "splashNavbar";
     }
 
     if (window.scrollY > aboutref.offsetTop + aboutref.offsetHeight) {
-      navref.current.id = "projectNavbar"; //navref.current.style.backgroundColor = "#080808";
+      navref.current.id = "projectNavbar";
     }
-
-    console.log(api.classicPage());
   };
 
   var onAboutDown = function onAboutDown(event) {
     aboutref = document.getElementById("about-card");
-    console.log(aboutref);
-    scrollToRef(aboutref); //api.setClassicPage("ABOUT");
+    scrollToRef(aboutref);
   };
 
   var onProjectsDown = function onProjectsDown(event) {
     projectref = document.getElementById("project-card");
-    console.log(projectref);
-    scrollToRef(projectref); //api.setClassicPage("PROJECT");
+    scrollToRef(projectref);
   };
 
   var onExperienceDown = function onExperienceDown(event) {
     experienceref = document.getElementById("experience-card");
-    console.log(experienceref);
-    scrollToRef(experienceref); //api.setClassicPage("EXPERIENCE");
+    scrollToRef(experienceref);
   };
 
   var onHomeDown = function onHomeDown(event) {
     primaryref = document.getElementById("title-card");
-    console.log(primaryref); //api.setClassicPage("HOME");
-
     scrollToRef(primaryref);
-  };
-
-  var onToggleExperimental = function onToggleExperimental(event) {
-    console.log(api.expMode());
-    api.setExpMode(!api.expMode());
   };
 
   return /*#__PURE__*/_react.default.createElement(_reactSpring.animated.nav, {
@@ -42334,8 +42275,7 @@ var TitleCard = function TitleCard() {
         document.getElementById(elementID).innerHTML = document.getElementById(elementID).innerHTML + "&nbsp";
       } else {
         document.getElementById(elementID).innerHTML += text.charAt(i);
-      } //console.log(txt.charAt(i));
-
+      }
 
       i++;
       setTimeout(function () {
@@ -42622,9 +42562,6 @@ var HoverableImage = function HoverableImage(_ref) {
 };
 
 var SkillsView = function SkillsView() {
-  (0, _react.useEffect)(function () {
-    console.log(_dataCat.default[0]);
-  });
   return /*#__PURE__*/_react.default.createElement("div", {
     id: "skillview-container"
   }, /*#__PURE__*/_react.default.createElement("div", {
@@ -42829,32 +42766,15 @@ var AboutPage = function AboutPage() {
   var _useSpring3 = (0, _reactSpring.useSpring)(function () {
     return {
       from: {
-        transform: "translate(-50vw,0vw)"
-      },
-      config: {
-        mass: 3,
-        tension: 170,
-        friction: 50
-      }
-    };
-  }),
-      _useSpring4 = _slicedToArray(_useSpring3, 3),
-      props2 = _useSpring4[0],
-      set2 = _useSpring4[1],
-      stop2 = _useSpring4[2];
-
-  var _useSpring5 = (0, _reactSpring.useSpring)(function () {
-    return {
-      from: {
         transform: "scale(0)",
         duration: 3000
       }
     };
   }),
-      _useSpring6 = _slicedToArray(_useSpring5, 3),
-      scaleUnderline = _useSpring6[0],
-      setScaleUnderline = _useSpring6[1],
-      stopScale = _useSpring6[2];
+      _useSpring4 = _slicedToArray(_useSpring3, 3),
+      scaleUnderline = _useSpring4[0],
+      setScaleUnderline = _useSpring4[1],
+      stopScale = _useSpring4[2];
 
   var _useTrail = (0, _reactSpring.useTrail)(aboutcont.length, function () {
     return {
@@ -42875,14 +42795,7 @@ var AboutPage = function AboutPage() {
       stopTrail = _useTrail2[2];
 
   (0, _react.useEffect)(function () {
-    console.log(api.classicPage(), "cirrpage");
-
     if (api.classicPage() === "ABOUT") {
-      console.log("ABOUT PAGE NETERERERERREER");
-      set2({
-        transform: "translate(0vw,0vw)",
-        delay: 300
-      });
       setScaleUnderline({
         transform: "scale(1)",
         delay: 300
@@ -42897,10 +42810,6 @@ var AboutPage = function AboutPage() {
         delay: 100
       });
     }
-    /* else{
-       set2({transform: "translate(-50vw,0vw)"});
-    } */
-
   });
   return /*#__PURE__*/_react.default.createElement(_reactSpring.animated.div, {
     id: "about-card"
@@ -42914,8 +42823,6 @@ var AboutPage = function AboutPage() {
     id: "aboutContent"
   }, /*#__PURE__*/_react.default.createElement("div", {
     id: "aboutContentTextWrapper"
-    /* style={props2} */
-
   }, trail.map(function (props, index) {
     return /*#__PURE__*/_react.default.createElement(_reactSpring.animated.div, {
       className: "aboutContentPairWrapper",
@@ -42954,520 +42861,12 @@ require("/public/codeabout.svg");
 require("/public/electronicabout.svg");
 
 require("/public/mechanicalabout.svg");
-
-{
-  /* <div className="aboutContentPairWrapper">
-  <img className="about-img" src={require("/public/codeabout.svg")} />
-  <p>Passionate Software Developer</p>
-  </div>
-  <div className="aboutContentPairWrapper">
-  <img className="about-img" src={require("/public/electronicabout.svg")} />
-  <p>Electrical Meddler</p>
-  </div>
-  <div className="aboutContentPairWrapper">
-  <img className="about-img" src={require("/public/mechanicalabout.svg")} />
-  <p>3D Design/Mechanical Tinkerer</p>
-  </div> */
-}
 },{"react":"node_modules/react/index.js","react-spring":"node_modules/react-spring/web.js","./AboutPage.css":"classic/AboutPage/AboutPage.css","../../MainContext":"MainContext.js","../SkillsView/SkillsView":"classic/SkillsView/SkillsView.js","/public/profilepicsqr.png":"public/profilepicsqr.png","/public/downarrow.svg":"public/downarrow.svg","/public/codeabout.svg":"public/codeabout.svg","/public/electronicabout.svg":"public/electronicabout.svg","/public/mechanicalabout.svg":"public/mechanicalabout.svg"}],"classic/ProjectPage/ProjectPage.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"node_modules/react-parallax-tilt/dist/react-parallax-tilt.es5.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-
-var _react = _interopRequireWildcard(require("react"));
-
-function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
-
-var n = function (e, t) {
-  return (n = Object.setPrototypeOf || {
-    __proto__: []
-  } instanceof Array && function (e, t) {
-    e.__proto__ = t;
-  } || function (e, t) {
-    for (var n in t) t.hasOwnProperty(n) && (e[n] = t[n]);
-  })(e, t);
-};
-
-var i = function () {
-  return (i = Object.assign || function (e) {
-    for (var t, n = 1, i = arguments.length; n < i; n++) for (var r in t = arguments[n]) Object.prototype.hasOwnProperty.call(t, r) && (e[r] = t[r]);
-
-    return e;
-  }).apply(this, arguments);
-};
-
-function r(e, t, n, i) {
-  return new (n || (n = Promise))(function (r, a) {
-    function l(e) {
-      try {
-        s(i.next(e));
-      } catch (e) {
-        a(e);
-      }
-    }
-
-    function o(e) {
-      try {
-        s(i.throw(e));
-      } catch (e) {
-        a(e);
-      }
-    }
-
-    function s(e) {
-      var t;
-      e.done ? r(e.value) : (t = e.value, t instanceof n ? t : new n(function (e) {
-        e(t);
-      })).then(l, o);
-    }
-
-    s((i = i.apply(e, t || [])).next());
-  });
-}
-
-function a(e, t) {
-  var n,
-      i,
-      r,
-      a,
-      l = {
-    label: 0,
-    sent: function () {
-      if (1 & r[0]) throw r[1];
-      return r[1];
-    },
-    trys: [],
-    ops: []
-  };
-  return a = {
-    next: o(0),
-    throw: o(1),
-    return: o(2)
-  }, "function" == typeof Symbol && (a[Symbol.iterator] = function () {
-    return this;
-  }), a;
-
-  function o(a) {
-    return function (o) {
-      return function (a) {
-        if (n) throw new TypeError("Generator is already executing.");
-
-        for (; l;) try {
-          if (n = 1, i && (r = 2 & a[0] ? i.return : a[0] ? i.throw || ((r = i.return) && r.call(i), 0) : i.next) && !(r = r.call(i, a[1])).done) return r;
-
-          switch (i = 0, r && (a = [2 & a[0], r.value]), a[0]) {
-            case 0:
-            case 1:
-              r = a;
-              break;
-
-            case 4:
-              return l.label++, {
-                value: a[1],
-                done: !1
-              };
-
-            case 5:
-              l.label++, i = a[1], a = [0];
-              continue;
-
-            case 7:
-              a = l.ops.pop(), l.trys.pop();
-              continue;
-
-            default:
-              if (!(r = l.trys, (r = r.length > 0 && r[r.length - 1]) || 6 !== a[0] && 2 !== a[0])) {
-                l = 0;
-                continue;
-              }
-
-              if (3 === a[0] && (!r || a[1] > r[0] && a[1] < r[3])) {
-                l.label = a[1];
-                break;
-              }
-
-              if (6 === a[0] && l.label < r[1]) {
-                l.label = r[1], r = a;
-                break;
-              }
-
-              if (r && l.label < r[2]) {
-                l.label = r[2], l.ops.push(a);
-                break;
-              }
-
-              r[2] && l.ops.pop(), l.trys.pop();
-              continue;
-          }
-
-          a = t.call(e, l);
-        } catch (e) {
-          a = [6, e], i = 0;
-        } finally {
-          n = r = 0;
-        }
-
-        if (5 & a[0]) throw a[1];
-        return {
-          value: a[0] ? a[1] : void 0,
-          done: !0
-        };
-      }([a, o]);
-    };
-  }
-}
-
-var l = i(i({
-  scale: 1,
-  perspective: 1e3,
-  flipVertically: !1,
-  flipHorizontally: !1,
-  reset: !0,
-  transitionEasing: "cubic-bezier(.03,.98,.52,.99)",
-  transitionSpeed: 400,
-  trackOnWindow: !1,
-  gyroscope: !1
-}, {
-  tiltEnable: !0,
-  tiltReverse: !1,
-  tiltAngleXInitial: 0,
-  tiltAngleYInitial: 0,
-  tiltMaxAngleX: 20,
-  tiltMaxAngleY: 20,
-  tiltAxis: null,
-  tiltAngleXManual: null,
-  tiltAngleYManual: null
-}), {
-  glareEnable: !1,
-  glareMaxOpacity: .7,
-  glareColor: "#ffffff",
-  glarePosition: "bottom",
-  glareReverse: !1
-});
-
-function o(e, t, n, i, r) {
-  return void 0 === r && (r = null), r && clearTimeout(r), e.style.transition = t + " " + n + "ms " + i, setTimeout(function () {
-    e.style.transition = "";
-  }, n);
-}
-
-function s(e, t, n) {
-  return Math.min(Math.max(e, t), n);
-}
-
-var p = function () {
-  var e = this;
-  this.glareAngle = 0, this.glareOpacity = 0, this.tiltAngleX = 0, this.tiltAngleY = 0, this.tiltAngleXPercentage = 0, this.tiltAngleYPercentage = 0, this.update = function (t, n) {
-    e.updateTilt(t, n), e.updateTiltManualInput(t, n), e.updateTiltReverse(n), e.updateTiltLimits(n);
-  }, this.updateTilt = function (t, n) {
-    var i = t.yPercentage,
-        r = n.tiltMaxAngleY;
-    e.tiltAngleX = t.xPercentage * n.tiltMaxAngleX / 100, e.tiltAngleY = i * r / 100 * -1;
-  }, this.updateTiltManualInput = function (t, n) {
-    var i = n.tiltAngleXManual,
-        r = n.tiltAngleYManual,
-        a = n.tiltMaxAngleX,
-        l = n.tiltMaxAngleY;
-    null === i && null === r || (e.tiltAngleX = null !== i ? i : 0, e.tiltAngleY = null !== r ? r : 0, t.xPercentage = 100 * e.tiltAngleX / a, t.yPercentage = 100 * e.tiltAngleY / l);
-  }, this.updateTiltReverse = function (t) {
-    var n = t.tiltReverse ? -1 : 1;
-    e.tiltAngleX = n * e.tiltAngleX, e.tiltAngleY = n * e.tiltAngleY;
-  }, this.updateTiltLimits = function (t) {
-    var n = t.tiltAxis;
-    e.tiltAngleX = s(e.tiltAngleX, -90, 90), e.tiltAngleY = s(e.tiltAngleY, -90, 90), n && (e.tiltAngleX = "x" === n ? e.tiltAngleX : 0, e.tiltAngleY = "y" === n ? e.tiltAngleY : 0);
-  }, this.updateTiltAnglesPercentage = function (t) {
-    var n = t.tiltMaxAngleY;
-    e.tiltAngleXPercentage = e.tiltAngleX / t.tiltMaxAngleX * 100, e.tiltAngleYPercentage = e.tiltAngleY / n * 100;
-  }, this.render = function (t) {
-    t.style.transform += "rotateX(" + e.tiltAngleX + "deg) rotateY(" + e.tiltAngleY + "deg) ";
-  };
-},
-    c = function (e) {
-  var t = this;
-  this.glareAngle = 0, this.glareOpacity = 0, this.calculateGlareSize = function (e) {
-    return {
-      width: 2 * e.width,
-      height: 2 * e.height
-    };
-  }, this.setSize = function (e) {
-    var n = t.calculateGlareSize(e);
-    t.glareEl.style.width = n.width + "px", t.glareEl.style.height = n.height + "px";
-  }, this.update = function (e, n, i, r) {
-    t.updateAngle(e, n.glareReverse), t.updateOpacity(e, n, i, r);
-  }, this.updateAngle = function (e, n) {
-    var i = e.xPercentage,
-        r = 180 / Math.PI,
-        a = i ? Math.atan2(e.yPercentage, -i) * r : 0;
-    t.glareAngle = a - (n ? 180 : 0);
-  }, this.updateOpacity = function (e, n, i, r) {
-    var a,
-        l = e.xPercentage,
-        o = e.yPercentage,
-        p = n.glareReverse,
-        c = n.glareMaxOpacity,
-        u = i ? -1 : 1,
-        g = r ? -1 : 1;
-
-    switch (n.glarePosition) {
-      case "top":
-        a = -l * u;
-        break;
-
-      case "right":
-        a = o * g;
-        break;
-
-      case "bottom":
-        a = l * u;
-        break;
-
-      case "left":
-        a = -o * g;
-        break;
-
-      case "all":
-        a = Math.hypot(l, o);
-        break;
-
-      default:
-        a = l * u;
-    }
-
-    var h = s(a = p ? -a : a, 0, 100);
-    t.glareOpacity = h * c / 100;
-  }, this.render = function (e) {
-    var n = e.glareColor;
-    t.glareEl.style.transform = "rotate(" + t.glareAngle + "deg) translate(-50%, -50%)", t.glareEl.style.opacity = t.glareOpacity.toString(), t.glareEl.style.background = "linear-gradient(0deg, rgba(255,255,255,0) 0%, " + n + " 100%)";
-  }, this.glareWrapperEl = document.createElement("div"), this.glareEl = document.createElement("div"), this.glareWrapperEl.appendChild(this.glareEl), this.glareWrapperEl.className = "glare-wrapper", this.glareEl.className = "glare";
-  var n = this.calculateGlareSize(e),
-      i = {
-    position: "absolute",
-    top: "50%",
-    left: "50%",
-    "transform-origin": "0% 0%",
-    "pointer-events": "none",
-    width: n.width + "px",
-    height: n.height + "px"
-  };
-  Object.assign(this.glareWrapperEl.style, {
-    position: "absolute",
-    top: "0",
-    left: "0",
-    width: "100%",
-    height: "100%",
-    overflow: "hidden"
-  }), Object.assign(this.glareEl.style, i);
-},
-    u = function (t) {
-  function i() {
-    var e = null !== t && t.apply(this, arguments) || this;
-    return e.wrapperEl = {
-      node: null,
-      size: {
-        width: 0,
-        height: 0,
-        left: 0,
-        top: 0
-      },
-      clientPosition: {
-        x: null,
-        y: null,
-        xPercentage: 0,
-        yPercentage: 0
-      },
-      transitionTimeoutId: void 0,
-      updateAnimationId: null,
-      childrenImgsCounter: 0,
-      childrenImgsLength: 0,
-      scale: 1
-    }, e.tilt = null, e.glare = null, e.addDeviceOrientationEventListener = function () {
-      return r(e, void 0, void 0, function () {
-        var e;
-        return a(this, function (t) {
-          switch (t.label) {
-            case 0:
-              if (!window.DeviceOrientationEvent) return "development" && "development" !== "development" || console.warn("Browser doesn't support Device Orientation."), [2];
-              if (!("function" == typeof DeviceMotionEvent.requestPermission)) return [3, 4];
-              t.label = 1;
-
-            case 1:
-              return t.trys.push([1, 3,, 4]), [4, DeviceOrientationEvent.requestPermission()];
-
-            case 2:
-              return "granted" === t.sent() && window.addEventListener("deviceorientation", this.onMove), [2];
-
-            case 3:
-              return e = t.sent(), console.error(e), [2];
-
-            case 4:
-              return window.addEventListener("deviceorientation", this.onMove), [2];
-          }
-        });
-      });
-    }, e.loadWrapperAndChildElements = function () {
-      var t = Array.from(e.wrapperEl.node.getElementsByTagName("img"));
-      e.wrapperEl.childrenImgsLength = t.length, 0 !== e.wrapperEl.childrenImgsLength ? t.forEach(function (t) {
-        t.complete ? e.allImagesLoaded() : t.addEventListener("load", e.allImagesLoaded);
-      }) : e.setSize();
-    }, e.allImagesLoaded = function () {
-      e.wrapperEl.childrenImgsCounter++, e.wrapperEl.childrenImgsCounter === e.wrapperEl.childrenImgsLength && e.setSize();
-    }, e.setSize = function () {
-      e.setWrapperElSize(), e.glare && e.glare.setSize(e.wrapperEl.size);
-    }, e.mainLoop = function (t) {
-      null !== e.wrapperEl.updateAnimationId && cancelAnimationFrame(e.wrapperEl.updateAnimationId), e.processInput(t), e.update(t.type), e.wrapperEl.updateAnimationId = requestAnimationFrame(e.renderFrame);
-    }, e.onEnter = function (t) {
-      var n = e.props.onEnter;
-      e.wrapperEl.node.style.willChange = "transform", e.setTransition(), n && n(t.type);
-    }, e.onMove = function (t) {
-      e.mainLoop(t), e.emitOnMove(t);
-    }, e.onLeave = function (t) {
-      var n = e.props.onLeave;
-
-      if (e.setTransition(), n && n(t.type), e.props.reset) {
-        var i = new CustomEvent("autoreset");
-        e.onMove(i);
-      }
-    }, e.processInput = function (t) {
-      var n = e.props.scale;
-
-      switch (t.type) {
-        case "mousemove":
-          e.wrapperEl.clientPosition.x = t.pageX, e.wrapperEl.clientPosition.y = t.pageY, e.wrapperEl.scale = n;
-          break;
-
-        case "touchmove":
-          e.wrapperEl.clientPosition.x = t.touches[0].pageX, e.wrapperEl.clientPosition.y = t.touches[0].pageY, e.wrapperEl.scale = n;
-          break;
-
-        case "deviceorientation":
-          e.processInputDeviceOrientation(t), e.wrapperEl.scale = n;
-          break;
-
-        case "autoreset":
-          var i = e.props,
-              r = i.tiltAngleYInitial / i.tiltMaxAngleY * 100;
-          e.wrapperEl.clientPosition.xPercentage = s(i.tiltAngleXInitial / i.tiltMaxAngleX * 100, -100, 100), e.wrapperEl.clientPosition.yPercentage = s(r, -100, 100), e.wrapperEl.scale = 1;
-      }
-    }, e.processInputDeviceOrientation = function (t) {
-      if (t.gamma && t.beta && e.props.gyroscope) {
-        var n = e.props,
-            i = n.tiltMaxAngleY,
-            r = t.gamma;
-        e.wrapperEl.clientPosition.xPercentage = t.beta / n.tiltMaxAngleX * 100, e.wrapperEl.clientPosition.yPercentage = r / i * 100, e.wrapperEl.clientPosition.xPercentage = s(e.wrapperEl.clientPosition.xPercentage, -100, 100), e.wrapperEl.clientPosition.yPercentage = s(e.wrapperEl.clientPosition.yPercentage, -100, 100);
-      }
-    }, e.update = function (t) {
-      var n = e.props,
-          i = n.tiltEnable,
-          r = n.flipVertically,
-          a = n.flipHorizontally;
-      e.updateClientInput(t), i && e.tilt.update(e.wrapperEl.clientPosition, e.props), e.updateFlip(), e.tilt.updateTiltAnglesPercentage(e.props), e.glare && e.glare.update(e.wrapperEl.clientPosition, e.props, r, a);
-    }, e.updateClientInput = function (t) {
-      if ("autoreset" !== t && "deviceorientation" !== t) {
-        var n, i;
-
-        if (e.props.trackOnWindow) {
-          var r = e.wrapperEl.clientPosition,
-              a = r.x;
-          n = r.y / window.innerHeight * 200 - 100, i = a / window.innerWidth * 200 - 100;
-        } else {
-          var l = e.wrapperEl,
-              o = l.size,
-              p = l.clientPosition;
-          n = (p.y - o.top) / o.height * 200 - 100, i = ((a = p.x) - o.left) / o.width * 200 - 100;
-        }
-
-        e.wrapperEl.clientPosition.xPercentage = s(n, -100, 100), e.wrapperEl.clientPosition.yPercentage = s(i, -100, 100);
-      }
-    }, e.updateFlip = function () {
-      var t = e.props,
-          n = t.flipHorizontally;
-      t.flipVertically && (e.tilt.tiltAngleX += 180, e.tilt.tiltAngleY *= -1), n && (e.tilt.tiltAngleY += 180);
-    }, e.renderFrame = function () {
-      e.resetWrapperElTransform(), e.renderPerspective(), e.tilt.render(e.wrapperEl.node), e.renderScale(), e.glare && e.glare.render(e.props);
-    }, e;
-  }
-
-  return function (e, t) {
-    function i() {
-      this.constructor = e;
-    }
-
-    n(e, t), e.prototype = null === t ? Object.create(t) : (i.prototype = t.prototype, new i());
-  }(i, t), i.prototype.componentDidMount = function () {
-    this.loadWrapperAndChildElements(), this.tilt = new p(), this.initGlare(), this.addEventListeners();
-    var e = new CustomEvent("autoreset");
-    this.mainLoop(e);
-    var t = new CustomEvent("initial");
-    this.emitOnMove(t);
-  }, i.prototype.componentWillUnmount = function () {
-    clearTimeout(this.wrapperEl.transitionTimeoutId), null !== this.wrapperEl.updateAnimationId && cancelAnimationFrame(this.wrapperEl.updateAnimationId), this.removeEventListeners();
-  }, i.prototype.addEventListeners = function () {
-    var e = this.props,
-        t = e.trackOnWindow,
-        n = e.gyroscope;
-    window.addEventListener("resize", this.setSize), t && (window.addEventListener("mouseenter", this.onEnter), window.addEventListener("mousemove", this.onMove), window.addEventListener("mouseout", this.onLeave), window.addEventListener("touchstart", this.onEnter), window.addEventListener("touchmove", this.onMove), window.addEventListener("touchend", this.onLeave)), n && this.addDeviceOrientationEventListener();
-  }, i.prototype.removeEventListeners = function () {
-    var e = this.props,
-        t = e.trackOnWindow,
-        n = e.gyroscope;
-    window.removeEventListener("resize", this.setSize), t && (window.removeEventListener("mouseenter", this.onEnter), window.removeEventListener("mousemove", this.onMove), window.removeEventListener("mouseout", this.onLeave), window.removeEventListener("touchstart", this.onEnter), window.removeEventListener("touchmove", this.onMove), window.removeEventListener("touchend", this.onLeave)), n && window.DeviceOrientationEvent && window.removeEventListener("deviceorientation", this.onMove);
-  }, i.prototype.setWrapperElSize = function () {
-    var e = this.wrapperEl.node.getBoundingClientRect();
-    this.wrapperEl.size.width = this.wrapperEl.node.offsetWidth, this.wrapperEl.size.height = this.wrapperEl.node.offsetHeight, this.wrapperEl.size.left = e.left + window.scrollX, this.wrapperEl.size.top = e.top + window.scrollY;
-  }, i.prototype.initGlare = function () {
-    this.props.glareEnable && (this.glare = new c(this.wrapperEl.size), this.wrapperEl.node.appendChild(this.glare.glareWrapperEl));
-  }, i.prototype.emitOnMove = function (e) {
-    var t = this.props.onMove;
-
-    if (t) {
-      var n = 0,
-          i = 0;
-      this.glare && (n = this.glare.glareAngle, i = this.glare.glareOpacity), t(this.tilt.tiltAngleX, this.tilt.tiltAngleY, this.tilt.tiltAngleXPercentage, this.tilt.tiltAngleYPercentage, n, i, e.type);
-    }
-  }, i.prototype.resetWrapperElTransform = function () {
-    this.wrapperEl.node.style.transform = "";
-  }, i.prototype.renderPerspective = function () {
-    this.wrapperEl.node.style.transform += "perspective(" + this.props.perspective + "px) ";
-  }, i.prototype.renderScale = function () {
-    var e = this.wrapperEl.scale;
-    this.wrapperEl.node.style.transform += "scale3d(" + e + "," + e + "," + e + ")";
-  }, i.prototype.setTransition = function () {
-    var e = this.props,
-        t = e.transitionSpeed,
-        n = e.transitionEasing;
-    this.wrapperEl.transitionTimeoutId = o(this.wrapperEl.node, "all", t, n, this.wrapperEl.transitionTimeoutId), this.glare && (this.glare.transitionTimeoutId = o(this.glare.glareEl, "opacity", t, n, this.glare.transitionTimeoutId));
-  }, i.prototype.render = function () {
-    var t = this,
-        n = this.props;
-    return _react.default.createElement("div", {
-      ref: function (e) {
-        return t.wrapperEl.node = e;
-      },
-      onMouseEnter: this.onEnter,
-      onMouseMove: this.onMove,
-      onMouseLeave: this.onLeave,
-      onTouchStart: this.onEnter,
-      onTouchMove: this.onMove,
-      onTouchEnd: this.onLeave,
-      className: n.className,
-      style: n.style
-    }, n.children);
-  }, i.defaultProps = l, i;
-}(_react.PureComponent);
-
-var _default = u;
-exports.default = _default;
-},{"react":"node_modules/react/index.js"}],"classic/ProjectPage/project.json":[function(require,module,exports) {
+},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"classic/ProjectPage/project.json":[function(require,module,exports) {
 module.exports = [{
   "name": "LiveLaunch",
   "description": "Get live countdowns on upcoming launches from across the globe, detailed specifications on launch vehicles, as well as an AR view that lets you experience the excitement right from your desk.",
@@ -43540,8 +42939,6 @@ var _reactSpring = require("react-spring");
 require("./ProjectPage.css");
 
 var _MainContext = _interopRequireDefault(require("../../MainContext"));
-
-var _reactParallaxTilt = _interopRequireDefault(require("react-parallax-tilt"));
 
 var _project = _interopRequireDefault(require("./project.json"));
 
@@ -43684,7 +43081,7 @@ require("../../public/videodemo/islanderdemo.mp4");
 require("../../public/videodemo/swiftydemo.mp4");
 
 require("../../public/videodemo/synthdemo.mp4");
-},{"react":"node_modules/react/index.js","react-spring":"node_modules/react-spring/web.js","./ProjectPage.css":"classic/ProjectPage/ProjectPage.css","../../MainContext":"MainContext.js","react-parallax-tilt":"node_modules/react-parallax-tilt/dist/react-parallax-tilt.es5.js","./project.json":"classic/ProjectPage/project.json","../../public/videodemo/foodsterdemo.mp4":"public/videodemo/foodsterdemo.mp4","../../public/videodemo/LiveLaunchDemo.mp4":"public/videodemo/LiveLaunchDemo.mp4","../../public/videodemo/deadwatchdemo.mp4":"public/videodemo/deadwatchdemo.mp4","../../public/videodemo/chemventorydemo.mp4":"public/videodemo/chemventorydemo.mp4","../../public/videodemo/gatoraccessFulldemo.mp4":"public/videodemo/gatoraccessFulldemo.mp4","../../public/videodemo/islanderdemo.mp4":"public/videodemo/islanderdemo.mp4","../../public/videodemo/swiftydemo.mp4":"public/videodemo/swiftydemo.mp4","../../public/videodemo/synthdemo.mp4":"public/videodemo/synthdemo.mp4"}],"classic/ExperiencePage/ExperiencePage.css":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","react-spring":"node_modules/react-spring/web.js","./ProjectPage.css":"classic/ProjectPage/ProjectPage.css","../../MainContext":"MainContext.js","./project.json":"classic/ProjectPage/project.json","../../public/videodemo/foodsterdemo.mp4":"public/videodemo/foodsterdemo.mp4","../../public/videodemo/LiveLaunchDemo.mp4":"public/videodemo/LiveLaunchDemo.mp4","../../public/videodemo/deadwatchdemo.mp4":"public/videodemo/deadwatchdemo.mp4","../../public/videodemo/chemventorydemo.mp4":"public/videodemo/chemventorydemo.mp4","../../public/videodemo/gatoraccessFulldemo.mp4":"public/videodemo/gatoraccessFulldemo.mp4","../../public/videodemo/islanderdemo.mp4":"public/videodemo/islanderdemo.mp4","../../public/videodemo/swiftydemo.mp4":"public/videodemo/swiftydemo.mp4","../../public/videodemo/synthdemo.mp4":"public/videodemo/synthdemo.mp4"}],"classic/ExperiencePage/ExperiencePage.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -43803,8 +43200,6 @@ var ExperiencePage = function ExperiencePage() {
   var api = (0, _react.useContext)(_MainContext.default);
   (0, _react.useEffect)(function () {
     if (api.classicPage() === "EXPERIENCE") {
-      console.log("EXPERIENCE PAGE REACHERD");
-      console.log(_experience.default.length);
       setScaleUnderline({
         transform: "scale(1)",
         delay: 300
@@ -43901,11 +43296,6 @@ var PrimaryDisplay = function PrimaryDisplay() {
     }
   };
 
-  var onToggleDown = function onToggleDown(event) {
-    api.setExpMode(true);
-    console.log(api.expMode());
-  };
-
   return /*#__PURE__*/_react.default.createElement(_MainContext.default.Provider, {
     value: api
   }, /*#__PURE__*/_react.default.createElement(_reactSpring.animated.div, {
@@ -43925,20 +43315,6 @@ var PrimaryDisplay = function PrimaryDisplay() {
 };
 
 var _default = PrimaryDisplay;
-/*const transitions = useTransition(classicPage(), null, {
-    from: { position: 'absolute', opacity: 0, backgroundColor:"white" },
-    enter: { opacity: 1, backgroundColor:"black" },
-    leave: { opacity: 0,  backgroundColor:"white" },
-})
-return transitions.map(({ item, key, props }) => {
-        if (item==="HOME"){
-            return <TitleCard style={props}/>
-        }else if(item==="ABOUT"){
-            return <AboutPage style={props} />
-        }
-    });
-*/
-
 exports.default = _default;
 },{"react":"node_modules/react/index.js","react-spring":"node_modules/react-spring/web.js","./PrimaryDisplay.css":"classic/PrimaryDisplay/PrimaryDisplay.css","react-particles-js":"node_modules/react-particles-js/index.js","../Navbar/Navbar":"classic/Navbar/Navbar.js","../TitleCard/TitleCard":"classic/TitleCard/TitleCard.js","../AboutPage/AboutPage":"classic/AboutPage/AboutPage.js","../ProjectPage/ProjectPage":"classic/ProjectPage/ProjectPage.js","../ExperiencePage/ExperiencePage":"classic/ExperiencePage/ExperiencePage.js","../../MainContext":"MainContext.js"}],"App.js":[function(require,module,exports) {
 "use strict";
@@ -43974,10 +43350,6 @@ function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(
 
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
-//REDUX:
-//Reducer
-//Store
-//const MainContext = createContext(null);
 function App(props) {
   var _useState = (0, _react.useState)("HOME"),
       _useState2 = _slicedToArray(_useState, 2),
@@ -44005,19 +43377,14 @@ function App(props) {
 
 var _reactDom = _interopRequireDefault(require("react-dom"));
 
-var _react = _interopRequireWildcard(require("react"));
+var _react = _interopRequireDefault(require("react"));
 
 require("./styles.css");
 
 var _App = _interopRequireDefault(require("./App"));
 
-function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-//import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 _reactDom.default.render( /*#__PURE__*/_react.default.createElement(_App.default, null), document.getElementById("root"));
 },{"react-dom":"node_modules/react-dom/index.js","react":"node_modules/react/index.js","./styles.css":"styles.css","./App":"App.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -44047,7 +43414,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50171" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56497" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

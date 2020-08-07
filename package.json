@@ -21,10 +21,10 @@
   "keywords": [],
   "dependencies": {
     "postprocessing": "^6.16.0",
+    "public": "^0.1.5",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-image": "^4.0.3",
-    "react-parallax-tilt": "^1.4.61",
     "react-particles-js": "^3.3.0",
     "react-spring": "^8.0.27"
   },
