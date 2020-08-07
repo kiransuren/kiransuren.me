@@ -9,8 +9,6 @@
     padding-bottom: 5vw;
     display: flex;
     flex-direction: column;
-    
-    
 }
 
 #projectTitle{
@@ -45,7 +43,8 @@
 .projectCardWrapper{
     position: relative;
     background-color: #F7FFF7; /*F7F7F7,F7FFF7, FFF8F0 */
-    margin: 2rem 2rem;
+    /* margin: 2rem 2rem; */
+    margin: 2rem 2rem; 
     text-align: center;
     border-radius: 5%;
     width: auto;

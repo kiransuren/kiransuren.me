@@ -43469,52 +43469,60 @@ exports.default = _default;
 module.exports = [{
   "name": "LiveLaunch",
   "description": "Get live countdowns on upcoming launches from across the globe, detailed specifications on launch vehicles, as well as an AR view that lets you experience the excitement right from your desk.",
-  "imgsource": "../../public/demos/LiveLaunchDemo.gif",
-  "link": "https://devpost.com/software/livelaunch",
-  "firebaselink": "https://firebasestorage.googleapis.com/v0/b/knowhow-69b71.appspot.com/o/LiveLaunchDemo.gif?alt=media&token=28c49da9-0522-45bb-b9fb-c9ddb28e5c75"
+  "imgsource": "../../public/videodemo/LiveLaunchDemo.mp4",
+  "link": "https://devpost.com/software/livelaunch"
+}, {
+  "name": "Synthwave Site",
+  "description": "An experimental portfolio site. Inspired by Synthwave and the 80s as a whole.",
+  "imgsource": "../../public/videodemo/synthdemo.mp4",
+  "link": "https://synthwavesite.netlify.app"
 }, {
   "name": "Foodster",
   "description": "Webapp that finds recipes based off ingredients/cost etc. from an online database. Created using ReactJS",
-  "imgsource": "../../public/demos/croppedfoodster.gif",
-  "link": "https://github.com/kiransuren/foodster",
-  "firebaselink": "https://firebasestorage.googleapis.com/v0/b/knowhow-69b71.appspot.com/o/croppedfoodster.gif?alt=media&token=4d52e626-1306-4538-b0b5-49d637b5861b"
+  "imgsource": "../../public/videodemo/foodsterdemo.mp4",
+  "link": "https://github.com/kiransuren/foodster"
 }, {
   "name": "Chemventory",
   "description": "Database software aimed at assisting science departments in keeping track of their apparatus and chemicals",
-  "imgsource": "../../public/demos/chemventorydemo2.gif",
-  "link": "https://github.com/kiransuren/Chemventory",
-  "firebaselink": "https://firebasestorage.googleapis.com/v0/b/knowhow-69b71.appspot.com/o/chemventorydemo.gif?alt=media&token=f8ce9a9e-5495-427e-8ed3-6fa91bbe277b"
+  "imgsource": "../../public/videodemo/chemventorydemo.mp4",
+  "link": "https://github.com/kiransuren/Chemventory"
 }, {
   "name": "GatorAccess",
   "description": "Social Media Application that connects students and tutors in a schooling environment.",
-  "imgsource": "../../public/demos/gatoraccessFulldemo.gif",
-  "link": "https://github.com/kiransuren/GatorAccess",
-  "firebaselink": "https://firebasestorage.googleapis.com/v0/b/knowhow-69b71.appspot.com/o/gatoraccessFulldemo.gif?alt=media&token=eb8ae2e3-03ba-4463-8616-e03106f1860d"
+  "imgsource": "../../public/videodemo/gatoraccessFulldemo.mp4",
+  "link": "https://github.com/kiransuren/GatorAccess"
 }, {
   "name": "Islander",
   "description": "Proof of concept Unity game using infinite terrain generation. Find the pieces of your fallen rocket and escape the planet before its too late!",
-  "imgsource": "../../public/demos/islanderdemo.gif",
-  "link": "https://github.com/kiransuren/GatorAccess",
-  "firebaselink": "https://firebasestorage.googleapis.com/v0/b/knowhow-69b71.appspot.com/o/islanderdemo.gif?alt=media&token=93137578-c5ee-473e-8da6-e41766124e62"
+  "imgsource": "../../public/videodemo/islanderdemo.mp4",
+  "link": "https://github.com/kiransuren/GatorAccess"
 }, {
   "name": "Swifty",
   "description": "Swifty is a simple, lightweight note taking iOS app. Perfect for remembering any small pieces of information.",
-  "imgsource": "../../public/demos/swiftydemo.gif",
-  "link": "https://github.com/kiransuren/Swifty",
-  "firebaselink": "https://firebasestorage.googleapis.com/v0/b/knowhow-69b71.appspot.com/o/swiftydemo.gif?alt=media&token=705b7360-3c5a-45d0-b1cd-6e81d48f8933"
+  "imgsource": "../../public/videodemo/swiftydemo.mp4",
+  "link": "https://github.com/kiransuren/Swifty"
 }, {
   "name": "Deadwatch",
   "description": "A top-down shooter game created using python and pygame.",
-  "imgsource": "../../public/demos/deadwatchdemo.gif",
-  "link": "https://github.com/kiransuren/deadwatch",
-  "firebaselink": "https://firebasestorage.googleapis.com/v0/b/knowhow-69b71.appspot.com/o/deadwatchdemo.gif?alt=media&token=551b8403-d339-41a3-922b-0aec134ddd77"
+  "imgsource": "../../public/videodemo/deadwatchdemo.mp4",
+  "link": "https://github.com/kiransuren/deadwatch"
 }];
-},{}],"public/demos/croppedfoodster.gif":[function(require,module,exports) {
-module.exports = "/croppedfoodster.e7c281ec.gif";
-},{}],"public/demos/LiveLaunchDemo.gif":[function(require,module,exports) {
-module.exports = "/LiveLaunchDemo.aadb186b.gif";
-},{}],"public/demos/deadwatchdemo.gif":[function(require,module,exports) {
-module.exports = "/deadwatchdemo.dbad585c.gif";
+},{}],"public/videodemo/foodsterdemo.mp4":[function(require,module,exports) {
+module.exports = "/foodsterdemo.204c2595.mp4";
+},{}],"public/videodemo/LiveLaunchDemo.mp4":[function(require,module,exports) {
+module.exports = "/LiveLaunchDemo.8dbfd566.mp4";
+},{}],"public/videodemo/deadwatchdemo.mp4":[function(require,module,exports) {
+module.exports = "/deadwatchdemo.3b1ce5f4.mp4";
+},{}],"public/videodemo/chemventorydemo.mp4":[function(require,module,exports) {
+module.exports = "/chemventorydemo.e5945dd9.mp4";
+},{}],"public/videodemo/gatoraccessFulldemo.mp4":[function(require,module,exports) {
+module.exports = "/gatoraccessFulldemo.53697894.mp4";
+},{}],"public/videodemo/islanderdemo.mp4":[function(require,module,exports) {
+module.exports = "/islanderdemo.56d16165.mp4";
+},{}],"public/videodemo/swiftydemo.mp4":[function(require,module,exports) {
+module.exports = "/swiftydemo.9f80f80e.mp4";
+},{}],"public/videodemo/synthdemo.mp4":[function(require,module,exports) {
+module.exports = "/synthdemo.79ed72da.mp4";
 },{}],"classic/ProjectPage/ProjectPage.js":[function(require,module,exports) {
 "use strict";
 
@@ -43637,28 +43645,47 @@ var ProjectPage = function ProjectPage() {
       className: "projectATag",
       href: _project.default[index].link,
       target: "_blank"
-    }, /*#__PURE__*/_react.default.createElement("img", {
+    }, /*#__PURE__*/_react.default.createElement("video", {
+      autoplay: "true",
+      loop: "true",
+      muted: "true",
       className: "project-image",
-      src: _project.default[index].firebaselink
-    }), /*#__PURE__*/_react.default.createElement("div", {
+      width: "250"
+    }, /*#__PURE__*/_react.default.createElement("source", {
+      src: require(_project.default[index].imgsource),
+      type: "video/mp4"
+    }), "Sorry, your browser doesn't support embedded videos."), /*#__PURE__*/_react.default.createElement("div", {
       className: "overlay"
     }, /*#__PURE__*/_react.default.createElement("p", {
       className: "projectName"
     }, _project.default[index].name), /*#__PURE__*/_react.default.createElement("p", {
       className: "projectDescription"
     }, _project.default[index].description))));
-  })));
+  })), /*#__PURE__*/_react.default.createElement("img", {
+    className: "project-image",
+    src: require("../../public/videodemo/foodsterdemo.mp4")
+  }));
 };
 
 var _default = ProjectPage;
 exports.default = _default;
 
-require("../../public/demos/croppedfoodster.gif");
+require("../../public/videodemo/foodsterdemo.mp4");
 
-require("../../public/demos/LiveLaunchDemo.gif");
+require("../../public/videodemo/LiveLaunchDemo.mp4");
 
-require("../../public/demos/deadwatchdemo.gif");
-},{"react":"node_modules/react/index.js","react-spring":"node_modules/react-spring/web.js","./ProjectPage.css":"classic/ProjectPage/ProjectPage.css","../../MainContext":"MainContext.js","react-parallax-tilt":"node_modules/react-parallax-tilt/dist/react-parallax-tilt.es5.js","./project.json":"classic/ProjectPage/project.json","../../public/demos/croppedfoodster.gif":"public/demos/croppedfoodster.gif","../../public/demos/LiveLaunchDemo.gif":"public/demos/LiveLaunchDemo.gif","../../public/demos/deadwatchdemo.gif":"public/demos/deadwatchdemo.gif"}],"classic/ExperiencePage/ExperiencePage.css":[function(require,module,exports) {
+require("../../public/videodemo/deadwatchdemo.mp4");
+
+require("../../public/videodemo/chemventorydemo.mp4");
+
+require("../../public/videodemo/gatoraccessFulldemo.mp4");
+
+require("../../public/videodemo/islanderdemo.mp4");
+
+require("../../public/videodemo/swiftydemo.mp4");
+
+require("../../public/videodemo/synthdemo.mp4");
+},{"react":"node_modules/react/index.js","react-spring":"node_modules/react-spring/web.js","./ProjectPage.css":"classic/ProjectPage/ProjectPage.css","../../MainContext":"MainContext.js","react-parallax-tilt":"node_modules/react-parallax-tilt/dist/react-parallax-tilt.es5.js","./project.json":"classic/ProjectPage/project.json","../../public/videodemo/foodsterdemo.mp4":"public/videodemo/foodsterdemo.mp4","../../public/videodemo/LiveLaunchDemo.mp4":"public/videodemo/LiveLaunchDemo.mp4","../../public/videodemo/deadwatchdemo.mp4":"public/videodemo/deadwatchdemo.mp4","../../public/videodemo/chemventorydemo.mp4":"public/videodemo/chemventorydemo.mp4","../../public/videodemo/gatoraccessFulldemo.mp4":"public/videodemo/gatoraccessFulldemo.mp4","../../public/videodemo/islanderdemo.mp4":"public/videodemo/islanderdemo.mp4","../../public/videodemo/swiftydemo.mp4":"public/videodemo/swiftydemo.mp4","../../public/videodemo/synthdemo.mp4":"public/videodemo/synthdemo.mp4"}],"classic/ExperiencePage/ExperiencePage.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -44021,7 +44048,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60456" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53736" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
