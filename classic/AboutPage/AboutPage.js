@@ -35,7 +35,7 @@ const AboutPage = () => {
                 </div>
 
                 <animated.div id="aboutContentProfileWrapper" style={props}>
-                    <img id="aboutContentProfile" src={require("/public/profilepicsqr.png")}/>
+                    <img id="aboutContentProfile" src={require("/public/profilepicsqr.jpg")}/>
                 </animated.div> 
 
             </div>
