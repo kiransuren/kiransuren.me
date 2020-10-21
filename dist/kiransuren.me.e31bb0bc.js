@@ -42909,6 +42909,11 @@ module.exports = [{
   "description": "A top-down shooter game created using python and pygame.",
   "imgsource": "../../public/videodemo/deadwatchdemo.mp4",
   "link": "https://github.com/kiransuren/deadwatch"
+}, {
+  "name": "Manus Robotic Arm",
+  "description": "General purpose robotic arm that will be able to hold a payload of up to 1kg",
+  "imgsource": "../../public/videodemo/manusdemo.mp4",
+  "link": "https://github.com/kiransuren/3Designs"
 }];
 },{}],"public/videodemo/foodsterdemo.mp4":[function(require,module,exports) {
 module.exports = "/foodsterdemo.204c2595.mp4";
@@ -42926,6 +42931,8 @@ module.exports = "/islanderdemo.56d16165.mp4";
 module.exports = "/swiftydemo.9f80f80e.mp4";
 },{}],"public/videodemo/synthdemo.mp4":[function(require,module,exports) {
 module.exports = "/synthdemo.79ed72da.mp4";
+},{}],"public/videodemo/manusdemo.mp4":[function(require,module,exports) {
+module.exports = "/manusdemo.c9d1a296.mp4";
 },{}],"classic/ProjectPage/ProjectPage.js":[function(require,module,exports) {
 "use strict";
 
@@ -43083,7 +43090,9 @@ require("../../public/videodemo/islanderdemo.mp4");
 require("../../public/videodemo/swiftydemo.mp4");
 
 require("../../public/videodemo/synthdemo.mp4");
-},{"react":"node_modules/react/index.js","react-spring":"node_modules/react-spring/web.js","./ProjectPage.css":"classic/ProjectPage/ProjectPage.css","../../MainContext":"MainContext.js","./project.json":"classic/ProjectPage/project.json","../../public/videodemo/foodsterdemo.mp4":"public/videodemo/foodsterdemo.mp4","../../public/videodemo/LiveLaunchDemo.mp4":"public/videodemo/LiveLaunchDemo.mp4","../../public/videodemo/deadwatchdemo.mp4":"public/videodemo/deadwatchdemo.mp4","../../public/videodemo/chemventorydemo.mp4":"public/videodemo/chemventorydemo.mp4","../../public/videodemo/gatoraccessFulldemo.mp4":"public/videodemo/gatoraccessFulldemo.mp4","../../public/videodemo/islanderdemo.mp4":"public/videodemo/islanderdemo.mp4","../../public/videodemo/swiftydemo.mp4":"public/videodemo/swiftydemo.mp4","../../public/videodemo/synthdemo.mp4":"public/videodemo/synthdemo.mp4"}],"classic/ExperiencePage/ExperiencePage.css":[function(require,module,exports) {
+
+require("../../public/videodemo/manusdemo.mp4");
+},{"react":"node_modules/react/index.js","react-spring":"node_modules/react-spring/web.js","./ProjectPage.css":"classic/ProjectPage/ProjectPage.css","../../MainContext":"MainContext.js","./project.json":"classic/ProjectPage/project.json","../../public/videodemo/foodsterdemo.mp4":"public/videodemo/foodsterdemo.mp4","../../public/videodemo/LiveLaunchDemo.mp4":"public/videodemo/LiveLaunchDemo.mp4","../../public/videodemo/deadwatchdemo.mp4":"public/videodemo/deadwatchdemo.mp4","../../public/videodemo/chemventorydemo.mp4":"public/videodemo/chemventorydemo.mp4","../../public/videodemo/gatoraccessFulldemo.mp4":"public/videodemo/gatoraccessFulldemo.mp4","../../public/videodemo/islanderdemo.mp4":"public/videodemo/islanderdemo.mp4","../../public/videodemo/swiftydemo.mp4":"public/videodemo/swiftydemo.mp4","../../public/videodemo/synthdemo.mp4":"public/videodemo/synthdemo.mp4","../../public/videodemo/manusdemo.mp4":"public/videodemo/manusdemo.mp4"}],"classic/ExperiencePage/ExperiencePage.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -43092,7 +43101,7 @@ module.hot.accept(reloadCSS);
 module.exports = [{
   "position": "Software Team Member",
   "employer": "UW Robotics Team",
-  "description": "Created RQT plugins for GPS conversion using C++"
+  "description": "Member of a student design team exploring robotics and building a Mars rover for the University Rover Challenge. Developed a custom plugin on Ubuntu Linux to handle GPS data conversion and dispatching using C++ and rqt (Qt-based framework). Gained extensive knowledge of Robot Operating System (ROS) and related concepts such as nodes, messages, topics and services."
 }, {
   "position": "Director of Fundraising",
   "employer": "Wilson Tech Club",
@@ -43100,11 +43109,11 @@ module.exports = [{
 }, {
   "position": "Executive Director of Web Development",
   "employer": "Wilson STEM Club",
-  "description": "Designed, built and maintained the Wilson STEM club website. Collaborated with other executives to run competitions and other facets of the club."
+  "description": "Designed, built and maintained the Wilson STEM club website using React and Firebase. Collaborated with other club executives to run competitions and other facets of the club"
 }, {
   "position": "Camp Volunteer",
   "employer": "Royal City Soccer Club",
-  "description": "Helped organize kids, set up and run drills, games, tournaments and warm ups."
+  "description": "Volunteered at a soccer camp aimed at giving kids aged 5 to 12 a fun, positive and healthy way to enjoy their summer. Organized and ran warmup, drills and tournaments for over 30 kids with other camp leaders"
 }, {
   "position": "Reading Buddy Volunteers",
   "employer": "Whitby Public Library",
@@ -43416,7 +43425,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61892" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58347" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

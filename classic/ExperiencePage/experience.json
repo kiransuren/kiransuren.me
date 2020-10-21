@@ -2,7 +2,7 @@
     {
         "position":"Software Team Member",
         "employer":"UW Robotics Team",
-        "description":"Created RQT plugins for GPS conversion using C++"
+        "description":"Member of a student design team exploring robotics and building a Mars rover for the University Rover Challenge. Developed a custom plugin on Ubuntu Linux to handle GPS data conversion and dispatching using C++ and rqt (Qt-based framework). Gained extensive knowledge of Robot Operating System (ROS) and related concepts such as nodes, messages, topics and services."
     },
 
     {
@@ -14,13 +14,13 @@
     {
         "position":"Executive Director of Web Development",
         "employer":"Wilson STEM Club",
-        "description":"Designed, built and maintained the Wilson STEM club website. Collaborated with other executives to run competitions and other facets of the club."
+        "description":"Designed, built and maintained the Wilson STEM club website using React and Firebase. Collaborated with other club executives to run competitions and other facets of the club"
     },
 
     {
         "position":"Camp Volunteer",
         "employer":"Royal City Soccer Club",
-        "description":"Helped organize kids, set up and run drills, games, tournaments and warm ups."
+        "description":"Volunteered at a soccer camp aimed at giving kids aged 5 to 12 a fun, positive and healthy way to enjoy their summer. Organized and ran warmup, drills and tournaments for over 30 kids with other camp leaders"
     },
 
     {

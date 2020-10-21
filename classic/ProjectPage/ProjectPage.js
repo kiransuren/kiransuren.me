@@ -70,3 +70,6 @@ require("../../public/videodemo/islanderdemo.mp4")
 require("../../public/videodemo/swiftydemo.mp4")
 
 require("../../public/videodemo/synthdemo.mp4")
+
+
+require("../../public/videodemo/manusdemo.mp4")

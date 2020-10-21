@@ -53,5 +53,13 @@
         "description":"A top-down shooter game created using python and pygame.",
         "imgsource":"../../public/videodemo/deadwatchdemo.mp4",
         "link":"https://github.com/kiransuren/deadwatch",
-    }
+    },
+
+    {
+        "name":"Manus Robotic Arm",
+        "description":"General purpose robotic arm that will be able to hold a payload of up to 1kg",
+        "imgsource":"../../public/videodemo/manusdemo.mp4",
+        "link":"https://github.com/kiransuren/3Designs",
+    },
+
 ]
