@@ -1,2 +1,2 @@
-# kiransuren.github.io
+# kiransuren.me
 My Personal Website
