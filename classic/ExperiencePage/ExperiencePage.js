@@ -29,7 +29,7 @@ const ExperiencePage = () => {
             setScaleUnderline({transform: "scale(1)", delay:300})
             setTrail({transform: "translate(0vw,0vw)", delay:100})
         }
-    })
+    },[api.classicPage()])
 
     return(
         <animated.div id="experience-card">

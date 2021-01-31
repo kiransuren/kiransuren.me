@@ -1,4 +1,4 @@
-import React, {useEffect}  from 'react'
+import React from 'react'
 import './SkillsView.css'
 import './HoverableImage.css'
 
@@ -7,7 +7,7 @@ import data from './dataCat.json'
 const HoverableImage = ({source, text}) => {
     return(
         <div className="hoverable-image">
-            <img className="hovimg-img" src={require( "../.."+source )} />
+            <img className="hovimg-img" src={source} />
             <p className="hovimg-text"><span className="hovimg-textwrapper">{text}</span></p>
         </div>
     )

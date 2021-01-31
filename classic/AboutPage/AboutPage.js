@@ -4,7 +4,8 @@ import './AboutPage.css'
 import MainContext from '../../MainContext';
 import SkillsView from '../SkillsView/SkillsView'
 
-const aboutcont = [["Passionate Software Developer", "/public/codeabout.svg"], ["Electrical Meddler", "/public/electronicabout.svg"],["3D Design/Mechanical Tinkerer", "/public/mechanicalabout.svg"]]
+
+const aboutcont = [["Passionate Software Developer", "./public/codeabout.svg"], ["Electrical Meddler", "./public/electronicabout.svg"],["3D Design/Mechanical Tinkerer", "./public/mechanicalabout.svg"]]
 
 const AboutPage = () => {
     const api = useContext(MainContext);
@@ -18,7 +19,7 @@ const AboutPage = () => {
             set({transform: "translate(0vw,0vw)",visibility:"visible"})
             setTrail({transform: "translate(0vw,0vw)",visibility:"visible", delay:100})
         }
-    })
+    }, [api.classicPage()])
 
     return(
         <animated.div id="about-card">
@@ -28,7 +29,7 @@ const AboutPage = () => {
                 <div id="aboutContentTextWrapper">
                     {trail.map((props, index) => 
                                 <animated.div className="aboutContentPairWrapper" style={props}>
-                                    <img className="aboutContentImg" src={require(aboutcont[index][1])} />
+                                    <img className="aboutContentImg" src={aboutcont[index][1]} />
                                     <p className="aboutContentPTag">{aboutcont[index][0]}</p>
                                 </animated.div>
                     )}
@@ -38,7 +39,7 @@ const AboutPage = () => {
             </div>
             <div id="skillDirectionDiv">
                 <p id="skillDirectionText">Check out my skills!</p>
-                <img id="skillDirectionArrow" src={require("/public/downarrow.svg")}/>
+                <img id="skillDirectionArrow" src={"/public/downarrow.svg"}/>
             </div>
             <SkillsView />
         </animated.div>
@@ -47,9 +48,3 @@ const AboutPage = () => {
 
 export default AboutPage;
 
-
-require("/public/profilepicsqr.png")
-require("/public/downarrow.svg")
-require("/public/codeabout.svg")
-require("/public/electronicabout.svg")
-require("/public/mechanicalabout.svg")

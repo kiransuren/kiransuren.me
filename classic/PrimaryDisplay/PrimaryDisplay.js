@@ -30,7 +30,7 @@ const PrimaryDisplay = () => {
     return(
         <MainContext.Provider value={api}>
             <animated.div id="primary-div">
-                <Particles style={{'z-index':-10, position:'fixed' }} />
+                <Particles style={{ position:'fixed' }} />
                 <Navbar />
                 <TitleCard/>
                 <div className="division"></div>

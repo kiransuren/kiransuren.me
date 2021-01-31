@@ -28,7 +28,7 @@ const ProjectPage = () => {
             setScaleUnderline({transform: "scale(1)", delay:300})
             setTrail({transform: "scale(1)", delay:100})
         }
-    })
+    }, [api.classicPage()])
 
     return(
         <animated.div id="project-card">
@@ -40,7 +40,7 @@ const ProjectPage = () => {
                     <animated.div style={props} className="projectCardWrapper">
                                 <a className="projectATag" href={data[index].link} target="_blank">
                                 <video autoplay="true" loop="true" muted="true" className="project-image" width="250">
-                                    <source src={require(data[index].imgsource)}
+                                    <source src={data[index].imgsource}
                                             type="video/mp4"/>
                                     Sorry, your browser doesn't support embedded videos.
                                 </video>
@@ -57,19 +57,3 @@ const ProjectPage = () => {
 }
 
 export default ProjectPage;
-
-
-require("../../public/videodemo/foodsterdemo.mp4");
-require("../../public/videodemo/LiveLaunchDemo.mp4");
-require("../../public/videodemo/deadwatchdemo.mp4")
-
-require("../../public/videodemo/chemventorydemo.mp4");
-require("../../public/videodemo/gatoraccessFulldemo.mp4");
-require("../../public/videodemo/islanderdemo.mp4")
-
-require("../../public/videodemo/swiftydemo.mp4")
-
-require("../../public/videodemo/synthdemo.mp4")
-
-
-require("../../public/videodemo/manusdemo.mp4")
