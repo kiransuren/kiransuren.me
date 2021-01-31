@@ -2,6 +2,8 @@ const path = require("path");
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyPlugin = require("copy-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const TerserWebpackPlugin = require("terser-webpack-plugin");
 
 const port = process.env.PORT || 4000;
 
@@ -29,7 +31,7 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: ['style-loader','css-loader']
+        use: [MiniCssExtractPlugin.loader,'css-loader']
       },
       {
         test: /\.(png|jpg|gif)$/i,
@@ -63,5 +65,15 @@ module.exports = {
         { from: "public", to: "public" },
       ],
     }),
-  ]
+    new MiniCssExtractPlugin({
+      filename: "assets/css/[name].[contenthash:8].css",
+      chunkFilename: "assets/css/[name].[contenthash:8].chunk.css"
+    })
+  ],
+  optimization: {
+    minimize: true,
+      minimizer: [
+        new TerserWebpackPlugin()
+      ],
+  }
 };
