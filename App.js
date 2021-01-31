@@ -1,5 +1,5 @@
 //Module Imports
-import React, { useState, useEffect} from 'react'
+import React, { useState} from 'react'
 import MainContext from './MainContext'
 import PrimaryDisplay from './classic/PrimaryDisplay/PrimaryDisplay'
 
