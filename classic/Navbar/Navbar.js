@@ -5,7 +5,7 @@ import MainContext from '../../MainContext';
 //DONT MESS WITH THE TEMPLATE STRING
 const Navbar = () => {
     const api = useContext(MainContext);
-    const scrollToRef = (ref) => window.scrollTo(0, ref.offsetTop+2);
+    const scrollToRef = (ref) => window.scrollTo({top:ref.offsetTop+2, behavior: 'smooth' });
     var primaryref = document.getElementById("title-card");
     var aboutref = document.getElementById("about-card");
     var projectref = document.getElementById("project-card");
@@ -80,19 +80,31 @@ const Navbar = () => {
 
     const onAboutDown = (event) =>{
         aboutref = document.getElementById("about-card");
-        scrollToRef(aboutref);
+        aboutref.scrollIntoView({ 
+            behavior: 'smooth' 
+          });
+        //scrollToRef(aboutref);
     }
     const onProjectsDown = (event) =>{
         projectref = document.getElementById("project-card");
-        scrollToRef(projectref);
+        projectref.scrollIntoView({ 
+            behavior: 'smooth' 
+          });
+        //scrollToRef(projectref);
     }
     const onExperienceDown = (event) =>{
         experienceref = document.getElementById("experience-card");
-        scrollToRef(experienceref);
+        experienceref.scrollIntoView({ 
+            behavior: 'smooth' 
+          });
+        //scrollToRef(experienceref);
     }
     const onHomeDown = (event) =>{
         primaryref = document.getElementById("title-card");
-        scrollToRef(primaryref);
+        primaryref.scrollIntoView({ 
+            behavior: 'smooth' 
+          });
+        //scrollToRef(primaryref);
     }
 
     return(
